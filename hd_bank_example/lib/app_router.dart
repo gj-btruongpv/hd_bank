@@ -5,8 +5,8 @@ class AppRouter {
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
   static Map<String, WidgetBuilder> registerRoutes() {
     return {
-      LoginScreen.routePath: (context) => LoginScreen.registerRoute(context),
-      PaymentScreen.routePath: (context) => const PaymentScreen(),
+      LoginBankScreen.routePath: (context) => LoginBankScreen.registerRoute(context),
+      PaymentBankScreen.routePath: (context) => const PaymentBankScreen(),
     };
   }
 }

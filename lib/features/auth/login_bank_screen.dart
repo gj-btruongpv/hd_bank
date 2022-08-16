@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:hd_bank_sdk/features/payment/payment_bank_screen.dart';
 
-class LoginScreen extends StatefulWidget {
+class LoginBankScreen extends StatefulWidget {
   final String url;
   static const routePath = '/login';
-  const LoginScreen({Key? key, required this.url}) : super(key: key);
+  const LoginBankScreen({Key? key, required this.url}) : super(key: key);
 
   static Widget registerRoute(BuildContext context) {
     final arg = ModalRoute.of(context)!.settings.arguments as String;
-    return LoginScreen(url: arg);
+    return LoginBankScreen(url: arg);
   }
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<LoginBankScreen> createState() => _LoginBankScreenState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _LoginBankScreenState extends State<LoginBankScreen> {
   TextEditingController ctEmail = TextEditingController();
   TextEditingController ctPass = TextEditingController();
   @override
@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
             Center(
               child: InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, PaymentScreen.routePath);
+                  Navigator.pushNamed(context, PaymentBankScreen.routePath);
                 },
                 child: Container(
                   width: 200,

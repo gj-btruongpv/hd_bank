@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class PaymentScreen extends StatelessWidget {
+class PaymentBankScreen extends StatelessWidget {
   static const routePath = '/payment';
-  const PaymentScreen({Key? key}) : super(key: key);
+  const PaymentBankScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

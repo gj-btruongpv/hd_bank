@@ -27,7 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Center(
             child: InkWell(
               onTap: () async {
-                dynamic result = await Navigator.pushNamed(context, LoginScreen.routePath,
+                dynamic result = await Navigator.pushNamed(context, LoginBankScreen.routePath,
                     arguments: 'https://gid-stg.demoapp.info/realms/:realmName/protocol/openid-connect/');
                 if (result != null) {
                   text = result;
