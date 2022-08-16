@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:hd_bank_example/home_screen.dart';
 import 'package:hd_bank_example/login_screen.dart';
@@ -10,7 +9,7 @@ class AppRouter {
     return {
       LoginScreen.routePath: (context) => const LoginScreen(),
       HomeScreen.routePath: (context) => const HomeScreen(),
-      ...AppHdBankRouter.registerRoutesHdBank()
+      ...AppHdBankRouter.registerRoutesHdBank(key: navigatorKey, baseUrl: '')
     };
   }
 }

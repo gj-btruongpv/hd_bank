@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:hd_bank_example/app_router.dart';
-import 'package:hd_bank_example/home_screen.dart';
 import 'package:hd_bank_example/login_screen.dart';
 
 void main() {
