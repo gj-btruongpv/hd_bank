@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hd_bank_sdk/features/auth/login_bank_screen.dart';
 
 class HomeScreen extends StatefulWidget {
+  static const routePath = '/home';
   const HomeScreen({Key? key}) : super(key: key);
 
   @override

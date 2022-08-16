@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hd_bank_example/app_router.dart';
 import 'package:hd_bank_example/home_screen.dart';
+import 'package:hd_bank_example/login_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       routes: AppRouter.registerRoutes(),
-      home: const HomeScreen()
+      initialRoute: LoginScreen.routePath,
     );
   }
 }
