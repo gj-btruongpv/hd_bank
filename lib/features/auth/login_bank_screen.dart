@@ -3,7 +3,7 @@ import 'package:hd_bank_sdk/features/payment/payment_bank_screen.dart';
 
 class LoginBankScreen extends StatefulWidget {
   final String url;
-  static const routePath = '/login';
+  static const routePath = '/hd-bank/login';
   const LoginBankScreen({Key? key, required this.url}) : super(key: key);
 
   static Widget registerRoute(BuildContext context) {
