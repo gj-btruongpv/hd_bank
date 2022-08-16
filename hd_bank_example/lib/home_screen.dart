@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hd_bank_sdk/login_screen.dart';
+import 'package:hd_bank_sdk/features/auth/login_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

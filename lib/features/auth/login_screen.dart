@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hd_bank_sdk/features/payment/payment_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   final String url;
@@ -22,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
     debugPrint(widget.url);
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Login'),
+        title: const Text('Login HDBank'),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 20),
@@ -59,12 +60,33 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Center(
+              child: InkWell(
+                onTap: () {
+                  Navigator.pushNamed(context, PaymentScreen.routePath);
+                },
+                child: Container(
+                  width: 200,
+                  height: 48,
+                  color: Colors.blue,
+                  alignment: Alignment.center,
+                  child: const Text(
+                    'Payment',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ),
             )
           ],
         ),
       ),
     );
   }
+
   @override
   void dispose() {
     ctEmail.dispose();
