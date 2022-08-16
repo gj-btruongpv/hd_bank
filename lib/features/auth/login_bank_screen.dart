@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:hd_bank_sdk/features/payment/payment_screen.dart';
+import 'package:hd_bank_sdk/features/payment/payment_bank_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   final String url;
