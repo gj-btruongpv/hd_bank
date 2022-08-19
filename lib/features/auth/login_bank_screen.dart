@@ -45,7 +45,7 @@ class _LoginBankScreenState extends State<LoginBankScreen> {
               child: InkWell(
                 onTap: () {
                   String text = '${ctEmail.text}\n${ctPass.text}';
-                  Navigator.pushNamed(context, PaymentBankScreen.routePath);
+                  Navigator.pop(context, text);
                 },
                 child: Container(
                   width: 200,
