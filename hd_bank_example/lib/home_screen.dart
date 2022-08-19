@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hd_bank_sdk/features/auth/login_bank_screen.dart';
+import 'package:hd_bank_sdk/features/payment/payment_bank_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   static const routePath = '/home';

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class PaymentBankScreen extends StatelessWidget {
   static const routePath = '/hd-bank-payment';
@@ -6,11 +7,13 @@ class PaymentBankScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Payment'),
+    return const SafeArea(
+      child: Scaffold(
+        body: WebView(
+          javascriptMode: JavascriptMode.unrestricted,
+          initialUrl: 'https://hdbank.com.vn/',
+        ),
       ),
-      body: const SizedBox(),
     );
   }
 }

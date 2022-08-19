@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hd_bank_example/home_screen.dart';
 
 class LoginScreen extends StatelessWidget {
-  static const routePath = '/login';
+  static const routePath = '/';
   const LoginScreen({Key? key}) : super(key: key);
 
   @override
@@ -18,7 +18,7 @@ class LoginScreen extends StatelessWidget {
           Center(
             child: InkWell(
               onTap: () async {
-                Navigator.pushReplacementNamed(context, HomeScreen.routePath);
+                Navigator.pushNamed(context, HomeScreen.routePath);
               },
               child: Container(
                 width: 200,

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hd_bank_example/home_screen.dart';
 import 'package:hd_bank_example/login_screen.dart';
-import 'package:hd_bank_sdk/hd_bank.dart';
+import 'package:hd_bank_sdk/features/auth/login_bank_screen.dart';
+import 'package:hd_bank_sdk/features/payment/payment_bank_screen.dart';
+import 'package:hd_bank_sdk/hd_bank_router.dart';
 
 class AppRouter {
   static GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
